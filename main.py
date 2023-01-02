@@ -152,7 +152,7 @@ def main_loop():
             # Changing the x/y coordinates to grid coordinates
             column = pos[0] // (WIDTH + MARGIN)
             row = pos[1] // (HEIGHT + MARGIN)
-            # Setting the location, the user chooses equal to one
+            # Setting the location, the user chooses equal to three
             grid[row][column] = 3
             target = number_grid[row][column] 
             binarySearch(number_grid, target, 0, len(number_grid)-1)
@@ -173,7 +173,6 @@ def main_loop():
     # Update the screen
     pg.display.flip()
  
-# Be IDLE friendly. If you forget this line, the program will 'hang'
-# on exit.
+
 while 1: 
     main_loop() 
