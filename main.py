@@ -77,7 +77,7 @@ def draw_numbers():
                 for i in number_grid: 
                     output = number_grid[row][col]
                     number_text = font.render(str(output), True, pg.Color('GREEN')) 
-                    screen.blit(number_text, pg.Vector2((col * 80) + 0, (row * 80) + 5))
+                    screen.blit(number_text, pg.Vector2((col * 75) + 0, (row * 75) + 5))
                     
                     col += 1 
 
